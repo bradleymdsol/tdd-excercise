@@ -1,16 +1,18 @@
 package com.medidata.tdd
 
 
-class FinancialControl(maximumSpend: MaximumExpenditure) {
+class FinancialControl(maximumExpenditure: MaximumExpenditure) {
   private val totalExpenditure = TotalExpenditure()
 
-  def available(): AvailableToSpend = maximumSpend - totalExpenditure
+  def available(): AvailableExpenditure = {
+    maximumExpenditure - totalExpenditure
+  }
 
   def spend(spend: SpendAmount): SpendResult = {
-    if (available() < spend) return SpendFailed
+    if (available() < spend) return SpendExceeded
 
     totalExpenditure.append(spend)
-    SpendSuccess
+    SpendAdded
   }
 
 }

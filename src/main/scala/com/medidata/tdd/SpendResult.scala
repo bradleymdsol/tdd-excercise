@@ -3,6 +3,6 @@ package com.medidata.tdd
 
 sealed trait SpendResult
 
-case object SpendFailed extends SpendResult
+case object SpendExceeded extends SpendResult
 
-case object SpendSuccess extends SpendResult
+case object SpendAdded extends SpendResult

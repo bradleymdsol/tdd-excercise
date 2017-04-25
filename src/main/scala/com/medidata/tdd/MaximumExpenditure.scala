@@ -1,8 +1,8 @@
 package com.medidata.tdd
 
 case class MaximumExpenditure(value: BigDecimal) {
-  def -(totalSpend: TotalExpenditure): AvailableToSpend = {
-    AvailableToSpend(value - totalSpend.spent)
+  def -(totalSpend: TotalExpenditure): AvailableExpenditure = {
+    AvailableExpenditure(value - totalSpend.spent)
   }
 }
 
