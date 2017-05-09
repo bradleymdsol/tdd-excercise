@@ -1,5 +1,7 @@
 package com.medidata.tdd
 
+import com.medidata.tdd.control.{FinancialControl, SpendAdded, SpendExceeded}
+import com.medidata.tdd.domain.{AvailableExpenditure, MaximumExpenditure, SpendAmount}
 import org.scalatest.FunSuite
 
 class FinancialControlTest extends FunSuite {

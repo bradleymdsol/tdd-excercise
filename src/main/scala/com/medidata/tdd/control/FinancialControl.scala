@@ -1,4 +1,6 @@
-package com.medidata.tdd
+package com.medidata.tdd.control
+
+import com.medidata.tdd.domain.{AvailableExpenditure, MaximumExpenditure, SpendAmount, TotalExpenditure}
 
 
 class FinancialControl(maximumExpenditure: MaximumExpenditure) {

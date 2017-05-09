@@ -1,4 +1,4 @@
-package com.medidata.tdd
+package com.medidata.tdd.domain
 
 case class TotalExpenditure() {
   var spent = BigDecimal(0)

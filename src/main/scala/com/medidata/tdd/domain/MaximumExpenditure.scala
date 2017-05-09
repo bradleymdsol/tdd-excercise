@@ -1,4 +1,4 @@
-package com.medidata.tdd
+package com.medidata.tdd.domain
 
 case class MaximumExpenditure(value: BigDecimal) {
   def -(totalSpend: TotalExpenditure): AvailableExpenditure = {

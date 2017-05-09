@@ -1,4 +1,4 @@
-package com.medidata.tdd
+package com.medidata.tdd.domain
 
 case class AvailableExpenditure(value: BigDecimal) {
   def <(spentAmount: SpendAmount): Boolean = {

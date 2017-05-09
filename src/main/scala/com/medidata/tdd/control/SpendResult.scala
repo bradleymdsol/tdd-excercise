@@ -1,5 +1,4 @@
-package com.medidata.tdd
-
+package com.medidata.tdd.control
 
 sealed trait SpendResult
 
